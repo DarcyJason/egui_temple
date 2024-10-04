@@ -118,7 +118,16 @@ ui.horizontal(|ui| {
 });
 ```
 
-## 16. 网络布局
+## 16. 垂直布局
+
+```
+ui.vertical(|ui| {
+    ui.label("Name:");
+    ui.text_edit_singleline(&mut name);
+});
+```
+
+## 17. 网络布局
 
 ```
 ui.grid(|ui| {
