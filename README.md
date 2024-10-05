@@ -137,4 +137,17 @@ ui.grid(|ui| {
     ui.label("Row 2, Column 1");
     ui.label("Row 2, Column 2");
 });
+
+## 18. 水平垂直都居中
+
+```
+let available_height = ui.available_height();
+let padding = available_height * 0.25;
+ui.vertical_centered(|ui| {
+    ui.add_space(padding);
+    ui.label("The content is on center!");
+    ui.add_space(padding);
+});
+```
+
 ```
