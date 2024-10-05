@@ -1,11 +1,11 @@
 use eframe::egui;
 
-fn main() {
+fn main() -> Result<(), eframe::Error> {
     let options = eframe::NativeOptions::default();
-    let _ = eframe::run_native(
+    eframe::run_native(
         "EmptyApp", 
         options, 
-        Box::new(|_cc| Ok(Box::new(EmptyApp::default())))
+        Box::new(|_cc| Box::new(EmptyApp::default()))
         );
 }
 
