@@ -142,6 +142,8 @@ ui.grid(|ui| {
 ## 18. 内容居中
 
 ```
+use eframe::egui::Layout;
+
 ui.with_layout(Layout::centered_and_justified(egui::Direction::TopDown), |ui| {
     ui.label("Hello");
 });
