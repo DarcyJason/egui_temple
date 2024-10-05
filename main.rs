@@ -18,7 +18,7 @@ impl Default for EmptyApp {
 }
 
 impl eframe::App for EmptyApp {
-    fn update(&mut self, _ctx: &egui::Context, _frame: &mut eframe::Frame) {
+    fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
 
     }
 }
