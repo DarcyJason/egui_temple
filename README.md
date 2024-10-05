@@ -139,3 +139,10 @@ ui.grid(|ui| {
 });
 ```
 
+## 18. 内容居中
+
+```
+ui.with_layout(Layout::centered_and_justified(egui::Direction::TopDown), |ui| {
+    ui.label("Hello");
+});
+```
