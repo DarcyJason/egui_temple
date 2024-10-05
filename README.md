@@ -150,5 +150,3 @@ ui.vertical_centered(|ui| {
     ui.add_space(padding);
 });
 ```
-
-```
