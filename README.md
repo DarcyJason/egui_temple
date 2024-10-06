@@ -150,3 +150,17 @@ ui.vertical_centered(|ui| {
     ui.add_space(padding);
 });
 ```
+
+## 19. 错误弹窗
+```
+if self.error {
+  Window::new("Erro")
+    .collapsible(false)
+    .resizable(false)
+    .show(ctx, |ui| {
+      ui.label("The cipher text shouldn't be empty.");
+      if ui.button("OK").clicked() {
+        self.error = false;
+      }
+});
+```
